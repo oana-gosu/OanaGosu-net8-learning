@@ -46,73 +46,137 @@ int anothernumber = 7 + 2;
 //    Console.WriteLine("Not alphabetically ordered");
 //}
 
-Console.WriteLine("Input no:");
-int n = Convert.ToInt32(Console.ReadLine());
-switch (n)
-{
-    case 1:
-        {
-            Console.WriteLine("Ian");
-            break;
-        }
-    case 2:
-        {
-            Console.WriteLine("Feb");
-            break;
-        }
-    case 3:
-        {
-            Console.WriteLine("Mar");
-            break;
-        }
-    case 4:
-        {
-            Console.WriteLine("Apr");
-            break;
-        }
-    case 5:
-        {
-            Console.WriteLine("Mai");
-            break;
-        }
-    case 6:
-        {
-            Console.WriteLine("Iun");
-            break;
-        }
-    case 7:
-        {
-            Console.WriteLine("Iul");
-            break;
-        }
-    case 8:
-        {
-            Console.WriteLine("Aug");
-            break;
-        }
-    case 9:
-        {
-            Console.WriteLine("Sept");
-            break;
-        }
-    case 10:
-        {
-            Console.WriteLine("Oct");
-            break;
-        }
-    case 11:
-        {
-            Console.WriteLine("Nov");
-            break;
-        }
-    case 12:
-        {
-            Console.WriteLine("Dec");
-            break;
-        }
-    default:
-        {
-            Console.WriteLine("Unknown");
-            break;
-        }
-}
+//Console.WriteLine("Input no:");
+//int n = Convert.ToInt32(Console.ReadLine());
+//switch (n)
+//{
+//    case 1:
+//        {
+//            Console.WriteLine("Ian");
+//            break;
+//        }
+//    case 2:
+//        {
+//            Console.WriteLine("Feb");
+//            break;
+//        }
+//    case 3:
+//        {
+//            Console.WriteLine("Mar");
+//            break;
+//        }
+//    case 4:
+//        {
+//            Console.WriteLine("Apr");
+//            break;
+//        }
+//    case 5:
+//        {
+//            Console.WriteLine("Mai");
+//            break;
+//        }
+//    case 6:
+//        {
+//            Console.WriteLine("Iun");
+//            break;
+//        }
+//    case 7:
+//        {
+//            Console.WriteLine("Iul");
+//            break;
+//        }
+//    case 8:
+//        {
+//            Console.WriteLine("Aug");
+//            break;
+//        }
+//    case 9:
+//        {
+//            Console.WriteLine("Sept");
+//            break;
+//        }
+//    case 10:
+//        {
+//            Console.WriteLine("Oct");
+//            break;
+//        }
+//    case 11:
+//        {
+//            Console.WriteLine("Nov");
+//            break;
+//        }
+//    case 12:
+//        {
+//            Console.WriteLine("Dec");
+//            break;
+//        }
+//    default:
+//        {
+//            Console.WriteLine("Unknown");
+//            break;
+//        }
+//}
+
+int[] numbers = new int[5];
+numbers[0] = 12;
+numbers[1] = 14;
+numbers[2] = 34;
+numbers[3] = 567;
+numbers[4] = 34;
+Console.WriteLine(numbers[1]);
+int sum = numbers[0] + numbers[1] + numbers[2];
+int prod = numbers[3] * numbers[4];
+Console.WriteLine("sum =" + sum);
+Console.WriteLine("prod = " + prod);
+Console.WriteLine("sum2 = " + (sum + prod));
+
+List<int> numere = new List<int>();
+numere.Add(12);
+numere.Add(14);
+numere.Add(34);
+numere.Add(567);
+numere.Add(34);
+Console.WriteLine(numere[1]);
+
+List<string> nume = new List<string> { "Ana", "Victor", "Luca" };
+Console.WriteLine(nume[0] + "," + nume[1] + "," + nume[2]);
+
+Queue<int> coada = new Queue<int>();
+coada.Enqueue(12);
+coada.Enqueue(14);
+coada.Enqueue(34);
+coada.Enqueue(567);
+coada.Enqueue(34);
+Console.WriteLine(coada.ElementAt(1));
+
+Stack<int> stiva = new Stack<int>(5);
+stiva.Push(12);
+stiva.Push(14);
+stiva.Push(34);
+stiva.Push(567);
+stiva.Push(34);
+Console.WriteLine(stiva.ElementAt(1));
+
+Dictionary<int, string> note = new Dictionary<int, string>();
+note.Add(7, "Ana");
+note.Add(5, "Nicu");
+note.Add(8, "Iulia");
+note.Add(10, "Maria");
+note.Add(9, "Simona");
+Console.WriteLine(note[5]);
+
+Dictionary<int, List<string>> note2 = new Dictionary<int, List<string>>();
+note2.Add(10, new List<string> { "Ana", "Maria" });
+note2.Add(8, new List<string> { "Ileana", "Viorel", "Gicu" });
+note2.Add(7, new List<string> { "Ioan", "Iulia" });
+
+Console.WriteLine(note2[10][0]);
+Console.WriteLine(note2[8][1]);
+
+
+
+
+
+
+
+
